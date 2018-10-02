@@ -1,0 +1,25 @@
+[01-Oct-2018 18:40:05 UTC] PHP Warning:  Error while sending QUERY packet. PID=738 in /app/public/wp-includes/wp-db.php on line 1924
+[01-Oct-2018 19:38:42 UTC] PHP Parse error:  syntax error, unexpected '%' in /app/public/experiment.php on line 7
+[01-Oct-2018 19:44:46 UTC] PHP Parse error:  syntax error, unexpected '++' (T_INC), expecting ')' in /app/public/experiment.php on line 8
+[01-Oct-2018 20:08:06 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /app/public/wp-content/themes/fictional-university-theme/index.php on line 2
+[01-Oct-2018 20:23:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function len() in /app/public/wp-content/themes/fictional-university-theme/index.php:14
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/index.php on line 14
+[02-Oct-2018 14:58:19 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/fictional-university-theme/index.php on line 5
+[02-Oct-2018 14:58:20 UTC] PHP Parse error:  syntax error, unexpected end of file in /app/public/wp-content/themes/fictional-university-theme/index.php on line 5
+[02-Oct-2018 15:00:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_body() in /app/public/wp-content/themes/fictional-university-theme/index.php:5
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/index.php on line 5
+[02-Oct-2018 15:17:03 UTC] PHP Warning:  get_headers() expects at least 1 parameter, 0 given in /app/public/wp-content/themes/fictional-university-theme/index.php on line 2
+[02-Oct-2018 15:27:22 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'style.css' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[02-Oct-2018 15:32:14 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'style.css' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[02-Oct-2018 15:32:28 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'style.css' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[02-Oct-2018 15:32:29 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'style.css' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286

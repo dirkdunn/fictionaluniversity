@@ -1,0 +1,14 @@
+[01-Oct-2018 18:33:48] NOTICE: fpm is running, pid 16
+[01-Oct-2018 18:33:48] NOTICE: ready to handle connections
+[01-Oct-2018 18:40:06] NOTICE: Terminating ...
+[01-Oct-2018 18:40:06] NOTICE: exiting, bye-bye!
+[01-Oct-2018 18:40:24] NOTICE: fpm is running, pid 58
+[01-Oct-2018 18:40:24] NOTICE: ready to handle connections
+[02-Oct-2018 14:30:51] NOTICE: fpm is running, pid 54
+[02-Oct-2018 14:30:51] NOTICE: ready to handle connections
+[02-Oct-2018 14:47:45] WARNING: [pool www] child 75 exited on signal 15 (SIGTERM) after 1013.555961 seconds from start
+[02-Oct-2018 14:47:45] NOTICE: [pool www] child 8380 started
+[02-Oct-2018 14:47:46] NOTICE: Terminating ...
+[02-Oct-2018 14:47:46] NOTICE: exiting, bye-bye!
+[02-Oct-2018 14:49:02] NOTICE: fpm is running, pid 34
+[02-Oct-2018 14:49:02] NOTICE: ready to handle connections
