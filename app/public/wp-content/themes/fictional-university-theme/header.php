@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>>
     <head>
-        <!-- Bring in all head assets (CSS, dependencies from plugins etc.) -->
-        <?php wp_head(); ?>
+      <!-- meta tag for responsive websites-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- meta tag for charset (UTF-8, etc) -->
+      <meta charset="<?php bloginfo('charset'); ?>">
+      <!-- Bring in all head assets (CSS, dependencies from plugins etc.) -->
+      <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
   <header class="site-header">
     <div class="container">
-      <h1 class="school-logo-text float-left"><a href="#"><strong>Fictional</strong> University</a></h1>
-      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+    <h1 class="school-logo-text float-left">
+        <a href="<?php echo site_url()?>"><strong>Fictional</strong> University</a>
+    </h1>
+      <span class="js-search-trigger site-header__search-trigger">
+          <i class="fa fa-search" aria-hidden="true"></i>
+      </span>
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
         <nav class="main-navigation">
+         <!-- site_url(path_name) returns the site domain you are currently on,
+            protects against multiple instances (look up) -->
           <ul>
-            <li><a href="#">About Us</a></li>
+            <!-- is_page(page_slug) returns bool, wp_get_post_parent_id(current page id)(0 means this page) -->
+            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 15) echo 'class="current-menu-item"'?>>
+              <a href="<?php echo site_url('/about-us')?>">About Us</a>
+            </li>
             <li><a href="#">Programs</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Campuses</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="<?php echo site_url('/blog')?>">Blog</a></li>
           </ul>
+          <!-- Dynamic Menu wp_nav_menu(navMenuData(array),)-->
+          <?php
+            // wp_nav_menu(array(
+            //   'theme_location' => 'header_menu',
+            // ));
+          ?>
         </nav>
         <div class="site-header__util">
           <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
