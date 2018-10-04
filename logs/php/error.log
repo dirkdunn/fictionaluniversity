@@ -67,3 +67,16 @@ Stack trace:
 #6 /app/public/index.php(17): require('/app/public/wp-...')
 #7 {main}
   thrown in /app/public/wp-content/themes/fictional-university-theme/header.php on line 33
+[03-Oct-2018 18:07:06 UTC] PHP Warning:  Use of undefined constant the_title - assumed 'the_title' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 52
+[03-Oct-2018 19:06:11 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_get_post_parent_id(), 0 passed in /app/public/wp-content/themes/fictional-university-theme/header.php on line 34 and exactly 1 expected in /app/public/wp-includes/post.php:6205
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/header.php(34): wp_get_post_parent_id()
+#1 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true)
+#3 /app/public/wp-includes/general-template.php(41): locate_template(Array, true)
+#4 /app/public/wp-content/themes/fictional-university-theme/index.php(1): get_header()
+#5 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/post.php on line 6205

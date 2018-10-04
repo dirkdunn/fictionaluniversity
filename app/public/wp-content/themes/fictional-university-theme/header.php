@@ -24,13 +24,15 @@
             protects against multiple instances (look up) -->
           <ul>
             <!-- is_page(page_slug) returns bool, wp_get_post_parent_id(current page id)(0 means this page) -->
-            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 15) echo 'class="current-menu-item"'?>>
+            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 15) echo 'class="current-menu-item"'; ?>>
               <a href="<?php echo site_url('/about-us')?>">About Us</a>
             </li>
             <li><a href="#">Programs</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Campuses</a></li>
-            <li><a href="<?php echo site_url('/blog')?>">Blog</a></li>
+            <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"'; ?>>
+              <a href="<?php echo site_url('/blog')?>">Blog</a>
+            </li>
           </ul>
           <!-- Dynamic Menu wp_nav_menu(navMenuData(array),)-->
           <?php
