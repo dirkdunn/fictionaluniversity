@@ -80,3 +80,111 @@ Stack trace:
 #7 /app/public/index.php(17): require('/app/public/wp-...')
 #8 {main}
   thrown in /app/public/wp-includes/post.php on line 6205
+[04-Oct-2018 16:45:11 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'university_post_types' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[04-Oct-2018 16:46:38 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'university_post_types' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[04-Oct-2018 16:46:53 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'university_post_types' not found or invalid function name in /app/public/wp-includes/class-wp-hook.php on line 286
+[04-Oct-2018 16:56:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /app/public/wp-content/themes/fictional-university-theme/front-page.php:25
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 25
+[04-Oct-2018 16:57:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_post() on null in /app/public/wp-content/themes/fictional-university-theme/front-page.php:25
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 25
+[04-Oct-2018 17:18:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[04-Oct-2018 17:19:48 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[04-Oct-2018 17:23:49 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[04-Oct-2018 17:25:46 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[04-Oct-2018 17:26:26 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
+[04-Oct-2018 18:08:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_archive() in /app/public/wp-content/themes/fictional-university-theme/archive-event.php:9
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/archive-event.php on line 9
+[04-Oct-2018 18:53:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:09 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:10 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:14 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:16 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:38 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:54:39 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:55:00 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:56:26 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:33
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(33): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 33
+[04-Oct-2018 18:58:04 UTC] PHP Fatal error:  Uncaught Exception: DateTime::__construct(): Failed to parse time string (14/10/2018) at position 0 (1): Unexpected character in /app/public/wp-content/themes/fictional-university-theme/front-page.php:35
+Stack trace:
+#0 /app/public/wp-content/themes/fictional-university-theme/front-page.php(35): DateTime->__construct('14/10/2018')
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-content/themes/fictional-university-theme/front-page.php on line 35

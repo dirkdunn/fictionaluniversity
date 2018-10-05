@@ -8,7 +8,7 @@
     <div class="page-banner__content container container--narrow">
         <h1 class="page-banner__title"><?php the_title() ?></h1>
         <div class="page-banner__intro">
-            <p>DON'T FORGET TO REPLACE ME LATER</p>
+            <p>DON'T FORGET TO REPLACE ME LATER boo</p>
         </div>
     </div>  
 </div>
@@ -22,7 +22,7 @@
         </a>
         <span class="metabox__main">
         <?php
-        the_post();
+          the_post();
           echo "Posted by ",
           the_author_posts_link(),
           " on ",

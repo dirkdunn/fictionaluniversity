@@ -1,11 +1,6 @@
 <!-- This file allows us to have a conversation with the WP system itself -->
 <?php
 
-    function active_header_link_classes($page_slug, $id){
-        if (is_page($page_slug) or wp_get_post_parent_id(0) == $id)
-            return 'class="current-menu-item"';
-    }
-
     function university_files() {
         // wp_enqueue_script(str_alias, uri_location, dependencies, str_version, bool_loadatbottom);
         wp_enqueue_script(
@@ -38,4 +33,6 @@
     add_action('wp_enqueue_scripts','university_files');
     // add action for page title
     add_action('after_setup_theme', 'university_features');
+    // Create a new post type
+    add_action('init', 'university_post_types')
 ?>
