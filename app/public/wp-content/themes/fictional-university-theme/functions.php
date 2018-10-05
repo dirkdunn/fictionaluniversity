@@ -29,10 +29,34 @@
         register_nav_menu('footer_learn_menu', 'Footer Learn Menu');
     }
 
+    function adjust_event_archive_query($query) {
+        $onEventsArchive = !is_admin() && is_post_type_archive('event');
+        $isMainQuery = $query->is_main_query();
+        // If we are on event archive page and it is the main default QP query for that page.
+
+        if ($onEventsArchive && $isMainQuery) {
+            $today = date('Ymd');
+            $query->set('meta_key', 'event_date');
+            $query->set('orderby', 'meta_value_num');
+            $query->set('order', 'ASC');
+            $query->set('meta_query', array(
+                array(
+                    'key' => 'event_date',
+                    'compare' => '>=',
+                    'value' => $today,
+                    'type' => 'numeric',
+                ),
+            ));
+        }
+    }
+
     // add_action(at_which_moment_to_call, function_name)
     add_action('wp_enqueue_scripts','university_files');
     // add action for page title
     add_action('after_setup_theme', 'university_features');
     // Create a new post type
-    add_action('init', 'university_post_types')
+    add_action('init', 'university_post_types');
+    // pre_get_posts hook allow us to modify queries on pages, passes $query object
+    // to function on each page.
+    add_action('pre_get_posts', 'adjust_event_archive_query');
 ?>
