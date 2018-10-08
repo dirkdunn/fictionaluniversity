@@ -1,4 +1,3 @@
-<!-- This file allows us to have a conversation with the WP system itself -->
 <?php
 
     function university_files() {
@@ -29,11 +28,18 @@
         register_nav_menu('footer_learn_menu', 'Footer Learn Menu');
     }
 
-    function adjust_event_archive_query($query) {
+    function adjust_archive_queries($query) {
+        $onProgramsArchive = !is_admin() && is_post_type_archive('program');
         $onEventsArchive = !is_admin() && is_post_type_archive('event');
         $isMainQuery = $query->is_main_query();
-        // If we are on event archive page and it is the main default QP query for that page.
 
+        if ($onProgramsArchive && $isMainQuery) {
+            $query->set('orderby', 'title');
+            $query->set('order', 'ASC');
+            $query->set('posts_per_page', -1);
+        }
+
+        // If we are on event archive page and it is the main default QP query for that page.
         if ($onEventsArchive && $isMainQuery) {
             $today = date('Ymd');
             $query->set('meta_key', 'event_date');
@@ -58,5 +64,5 @@
     add_action('init', 'university_post_types');
     // pre_get_posts hook allow us to modify queries on pages, passes $query object
     // to function on each page.
-    add_action('pre_get_posts', 'adjust_event_archive_query');
+    add_action('pre_get_posts', 'adjust_archive_queries');
 ?>
